@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+<h1>User Management</h1>
+
+<!-- Create User Form -->
+<h2>Create User</h2>
+<form id="createUserForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <button type="submit">Create User</button>
+</form>
+
+<!-- Retrieve Users Form -->
+<h2>Retrieve Users</h2>
+<form id="retrieveUsersForm">
+    <label for="queryParam">Search by Name or Email:</label>
+    <input type="text" id="queryParam" name="queryParam">
+    <button type="submit">Search</button>
+</form>
+<div id="userList"></div>
+
+<!-- Update User Form -->
+<h2>Update User</h2>
+<form id="updateUserForm">
+    <label for="updateUserId">User ID:</label>
+    <input type="number" id="updateUserId" name="updateUserId" required><br>
+    <label for="updateUserName">Name:</label>
+    <input type="text" id="updateUserName" name="updateUserName" required><br>
+    <label for="updateUserEmail">Email:</label>
+    <input type="email" id="updateUserEmail" name="updateUserEmail" required><br>
+    <button type="submit">Update User</button>
+</form>
+
+<!-- Delete User Form -->
+<h2>Delete User</h2>
+<form id="deleteUserForm">
+    <label for="deleteUserId">User ID:</label>
+    <input type="number" id="deleteUserId" name="deleteUserId" required><br>
+    <button type="submit">Delete User</button>
+</form>
+
+<script src="app.js"></script>
+</body>
+</html>
